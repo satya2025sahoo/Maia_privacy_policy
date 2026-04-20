@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maia AI Chat Privacy Policy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* * CSS for "Cyber-Glass" Theme
+         * Modern Dark Glassmorphic design
+         */
+        :root {
+            --primary-accent: #A78BFA; /* Soft purple/pink */
+            --secondary-accent: #67E8F9; /* Electric Cyan */
+            --background-color: #07090F; /* Deep Space */
+            --text-primary: #E2E8F0; /* Off-white */
+            --text-secondary: #94A3B8; /* Muted grey */
+            --container-bg: rgba(255, 255, 255, 0.04); /* Translucent glass */
+            --border-color: rgba(167, 139, 250, 0.2); /* Subtle glow border */
+        }
+
+        body {
+            font-family: 'Roboto Mono', monospace;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: var(--container-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            /* Cyber-Glass backdrop-filter */
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        /* Embedded App Icon */
+        .app-icon {
+            width: 128px;
+            height: 128px;
+            border-radius: 24px;
+            margin: 0 auto 24px;
+            background-image: url('assets/splash_icon.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: 0 0 20px rgba(167, 139, 250, 0.2);
+        }
+
+        h1 {
+            color: var(--primary-accent);
+            font-size: 2.5em;
+            margin: 0;
+            line-height: 1.2;
+            text-shadow: 0 0 15px rgba(167, 139, 250, 0.3);
+        }
+
+        h2 {
+            color: var(--primary-accent);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-top: 40px;
+            font-size: 1.5em;
+        }
+
+        p, li {
+            font-size: 1.05em;
+            letter-spacing: 0.3px;
+        }
+
+        p {
+            color: var(--text-secondary);
+        }
+        
+        strong {
+            color: var(--text-primary);
+        }
+
+        ul {
+            padding-left: 20px;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: var(--secondary-accent);
+            text-decoration: none;
+            font-weight: 500;
+            transition: text-shadow 0.3s ease;
+        }
+
+        a:hover {
+            text-decoration: none;
+            text-shadow: 0 0 8px rgba(103, 232, 249, 0.6);
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: var(--text-secondary);
+            opacity: 0.7;
+        }
+
+        .last-updated {
+            text-align: center;
+            color: var(--text-secondary);
+            font-style: italic;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="app-icon"></div>
+            <h1>Maia AI Chat</h1>
+            <p style="color: var(--text-primary); font-size: 1.2em; margin-top: 10px;">Privacy Policy</p>
+        </header>
+
+        <main>
+            <p class="last-updated">Last Updated: <span id="last-updated">April 19, 2026</span></p>
+
+            <section>
+                <h2>Introduction</h2>
+                <p>This privacy policy governs your use of the "Maia" mobile application (the "App") created by <strong>Satya Ranjan Sahoo</strong>. This policy outlines the types of data we collect, why we collect it, and how it is used, processed, and stored.</p>
+                <p>Your privacy is critically important to us. All AI inference and conversation processing occurs entirely <strong>on your device</strong>. No conversation text, AI responses, or personal memory data is ever recorded, stored, or transmitted to any server by Maia's core features.</p>
+            </section>
+
+            <section>
+                <h2>Data Collection and Use (Permissions)</h2>
+                <p>The App requests the following permissions to provide its features. All data processed via these permissions either stays on your device or is handled by a clearly disclosed third-party service (Google AdMob).</p>
+                <ul>
+                    <li><strong>Internet Permission:</strong> This permission is required for:
+                        <ul>
+                            <li><strong>"Model Download":</strong> When you first launch the App (or choose to update the AI model), Maia downloads the AI language model file from the internet directly to your device's local storage. After the download is complete, Maia's AI features work fully offline. Internet is also used by Google AdMob to serve advertisements (see Third-Party Services below).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Foreground Service Permission:</strong> This permission is required to run the AI model download as a reliable background task. It prevents Android from interrupting the download when you switch to another app. A visible download progress notification will be shown, which is an Android requirement.</li>
+                    <li><strong>Foreground Service Data Sync Permission:</strong> This is an Android 14+ refinement of the Foreground Service permission. It specifically classifies the model download as a "data sync" operation, as required by Android for long-running download tasks. No additional data collection occurs.</li>
+                    <li><strong>Post Notifications Permission:</strong> This is required on Android 13 and above for the App to display the model download progress notification and any other background task status updates. You will be prompted to grant this permission. Notifications are used strictly for operational purposes and never for marketing.</li>
+                    <li><strong>Wakelock Permission:</strong> This permission is used to keep the device's CPU active during AI model inference and model downloads. This ensures the AI responds without interruption while you are actively using the App. It is not used to keep the screen on when you are not using the App.</li>
+                    <li><strong>Run User-Initiated Jobs Permission:</strong> This is an Android 14+ permission that allows a download you explicitly started to continue reliably in the background, even if the download takes a long time. No background data collection is performed.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>On-Device AI Processing</h2>
+                <p>The core feature of Maia is a large language model (LLM) that runs entirely on your device. This means:</p>
+                <ul>
+                    <li>All your conversation messages are processed locally on your device.</li>
+                    <li>Maia's AI responses are generated locally on your device.</li>
+                    <li>No conversation text, prompts, or AI outputs are sent to any external server.</li>
+                    <li>The AI model file is downloaded once and then used entirely offline for all AI features.</li>
+                    <li>Personal facts and memories that Maia extracts from your conversations are stored only in a local database on your device.</li>
+                </ul>
+                <p>Because all AI processing is on-device, <strong>Satya Ranjan Sahoo</strong> has no ability to view, access, or collect any of your conversations with Maia.</p>
+            </section>
+
+            <section>
+                <h2>Local Data Storage (On-Device)</h2>
+                <p>The App stores the following data locally on your device using two standard Android mechanisms. This data is never transmitted to or shared with us or any third party.</p>
+                <ul>
+                    <li><strong>SharedPreferences</strong> (a standard Android feature) is used to save your settings, including:
+                        <ul>
+                            <li>Your selected AI model and generation settings (e.g., response length, temperature).</li>
+                            <li>UI preferences and notification options.</li>
+                            <li>App state flags (e.g., whether the initial setup has been completed).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Local SQLite Database</strong> (via the Drift library) is used to save:
+                        <ul>
+                            <li>Your full chat history, including all messages you send and all responses from Maia.</li>
+                            <li>Personal facts and long-term memory items that Maia has extracted from your conversations.</li>
+                            <li>Your points balance and usage history.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>All of this data is stored securely on your device and is never transmitted or shared. You can permanently delete all locally stored data by uninstalling the App.</p>
+            </section>
+
+            <section>
+                <h2>Third-Party Services</h2>
+                <p>The only third-party service used by the App is <strong>Google AdMob</strong>, which is used to display advertisements. AdMob is an advertising service provided by Google LLC.</p>
+                <ul>
+                    <li>Google AdMob may collect and use device information, such as your Advertising ID, device type, and OS version, to serve personalized ads.</li>
+                    <li>We do not share any data collected by Maia's core features (such as conversation text, AI outputs, or personal memories) with Google or any advertiser.</li>
+                    <li>You can opt out of personalized ads at any time in your device's Settings under Google &rarr; Ads.</li>
+                    <li>We recommend you review Google's privacy policy for more information: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style="color: var(--text-primary);">https://policies.google.com/privacy</a></li>                </ul>
+            </section>
+
+            <section>
+                <h2>Children's Privacy</h2>
+                <p>The App is not intended for use by children under the age of 13. We do not knowingly collect any personally identifiable information from children. If you believe your child has provided personal information through the App, please contact us and we will take steps to provide guidance on removing that data from the device.</p>
+            </section>
+
+            <section>
+                <h2>Changes to This Privacy Policy</h2>
+                <p>We may update this privacy policy from time to time. We will notify you of any changes by posting the new privacy policy on this page and updating the "Last Updated" date above. You are advised to review this policy periodically for any changes.</p>
+            </section>
+
+            <section class="contact">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or suggestions about this Privacy Policy, do not hesitate to contact me.</p>
+                <p style="margin-top: 20px;">
+                    <strong style="color: var(--primary-accent); font-size: 1.2em;">Satya Ranjan Sahoo</strong><br>
+<a href="mailto:1rn21cd044.satayranjansahoo@gmail.com" style="margin-top: 10px; display: inline-block; color: var(--text-primary);">1rn21cd044.satayranjansahoo@gmail.com</a>            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Satya Ranjan Sahoo. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            try {
+                // Policy Update Date (YYYY-MM-DD)
+                const lastUpdatedDate = new Date('2026-04-19T12:00:00Z');
+                
+                const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                const dateString = lastUpdatedDate.toLocaleDateString('en-US', options);
+                
+                const dateElement = document.getElementById('last-updated');
+                if (dateElement) {
+                    dateElement.textContent = dateString;
+                }
+            } catch (e) {
+                console.error('Error setting date:', e);
+            }
+        });
+    </script>
+</body>
+</html>
