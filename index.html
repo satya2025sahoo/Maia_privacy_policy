@@ -14,7 +14,6 @@
             --background-color: #07090F; /* Deep Space */
             --text-primary: #E2E8F0; /* Off-white */
             --text-secondary: #94A3B8; /* Muted grey */
-            /* Changed to a solid color to remove the glow/gradient effect */
             --container-bg: #0F1219; 
             --border-color: rgba(167, 139, 250, 0.2); 
         }
@@ -35,7 +34,6 @@
             background-color: var(--container-bg);
             border: 1px solid var(--border-color);
             border-radius: 24px;
-            /* Removed backdrop-filter to eliminate the "glow" artifacts */
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
         }
 
@@ -55,6 +53,9 @@
             background-repeat: no-repeat;
             background-position: center;
             background-color: #1a1d26; /* Placeholder color if image fails */
+            
+            /* ADDED: Pinkish-purple glow effect */
+            box-shadow: 0 0 30px 10px rgba(217, 70, 239, 0.4);
         }
 
         h1 {
@@ -103,6 +104,12 @@
 
         a:hover {
             opacity: 0.8;
+        }
+
+        /* ADDED: Specific class for the off-white link */
+        .off-white-link {
+            color: #F8FAFC !important; /* Forces it to be off-white instead of cyan */
+            text-decoration: underline;
         }
 
         .contact {
@@ -177,7 +184,7 @@
             <section>
                 <h2>Third-Party Services</h2>
                 <p>The only third-party service used is <strong>Google AdMob</strong>. Google may collect device identifiers to serve ads. We do not share your private chat data with Google.</p>
-                <p>Review Google's privacy policy here: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+                <p>Review Google's privacy policy here: <a href="https://policies.google.com/privacy" target="_blank" class="off-white-link">https://policies.google.com/privacy</a></p>
             </section>
 
             <section class="contact">
